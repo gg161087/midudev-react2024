@@ -1,0 +1,63 @@
+.follow-card {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;  
+    justify-content: space-between;  
+    width: 100%;
+}
+.follow-card__header {
+    display: flex;
+    align-items: center;
+    gap: 4px;    
+}
+.follow-card__header div {
+    display: flex;
+    flex-direction: column;
+}
+.follow-card__header span {
+    opacity: 0.6;
+}
+.follow-card__avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+}
+.follow-card__btn-seguir, .follow-card__btn-seguiendo {
+    margin-left: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    border: 1px solid #000;
+    transition: .3s ease background-color;
+    width: 140px;
+}
+.follow-card__text{
+    display: block;
+}
+.follow-card__btn-seguir:hover {
+    background-color: #09f;
+}
+.follow-card__btn-seguiendo {
+    border: 1px solid #bbb;
+    background: transparent;
+    color: #fff;
+}
+.follow-card__btn-seguiendo:hover {
+    background-color: rgba(255, 0, 0, 0.178);
+    color: red;
+    border: 1px solid red;
+    transition: .3s ease all;
+    opacity: 1;
+}
+.follow-card__btn-seguiendo:hover .follow-card__text {
+    display: none;
+}
+.follow-card__btn-seguiendo:hover .follow-card__stop-follow {
+    display: block;
+}
+
+.follow-card__stop-follow{
+    display: none;
+}
